@@ -12,3 +12,16 @@
         }                   
         alert("Correct Answers: " + numCorrect);
     }
+
+    $(document).ready(function() {
+        $(".questions").hide()
+
+        $('#start').on('click', function(){
+            startGame();
+        })
+
+
+        function startGame() {
+            $(".questions").fadeIn()
+        }
+    });

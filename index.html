@@ -7,14 +7,22 @@
     <title>Sports Trivia</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src = "assets/javascript/app.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
  </head>
  <body>
     <div class="container">
         <div class="gameTitle">
-            <h1>Sports Trivia!</h1
+            <h1>Sports Trivia!</h1>
             
+            <div class = "start">
+            <button id="start" type="submit">Start Game!</button>
+            </div>
+
+            <div class = "questions">
                 <h3>What player in NBA history has the most rings?</h3>
                 <p><input type="radio" id="answer" name="group1" value="false">Larry Bird</p>
                 <p><input type="radio" id="answer" name="group1" value="false">Michael Jordan</p>
@@ -46,9 +54,9 @@
                 <p><input type="radio" id="myRadio" name="group5" value="false">San Jose Sharks</p>
                 
                 <button class="submit" onclick="return handleClick();" type="submit">Submit Answers</button>
+            </div>
         </div>
     </div>
     
 </body>
-<script src = "assets/javascript/app.js"></script>
 </html>
