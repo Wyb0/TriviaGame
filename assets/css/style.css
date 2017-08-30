@@ -1,0 +1,14 @@
+body {
+    background-image: url("http://wallpaper-gallery.net/images/sports-wallpaper/sports-wallpaper-8.jpg");
+    background-size: 100%;
+}
+
+.container {
+    margin-top: 200px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    background-color: white;
+    color: black;
+}
+)

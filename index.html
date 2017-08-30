@@ -5,12 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sports Trivia</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src = "assets/javascript/app.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
+ </head>
+ <body>
+    <div class="container">
+        <div class="gameTitle">
+            <h1>Sports Trivia!</h1
+            
+                <h3>What player in NBA history has the most rings?</h3>
+                <p><input type="radio" id="answer" name="group1" value="false">Larry Bird</p>
+                <p><input type="radio" id="answer" name="group1" value="false">Michael Jordan</p>
+                <p><input type="radio" id="answer" name="group1" value="true">Bill Russel</p>
+                <p><input type="radio" id="answer" name="group1" value="false">Robert Horry</p>
+                
+                <h3>What NFL team has the most Super Bowl Championships?</h3>
+                <p><input type="radio" id="answer" name="group2" value="true">Pittsburgh Steelers</p>
+                <p><input type="radio" id="answer" name="group2" value="false">New England Patriots</p>
+                <p><input type="radio" id="answer" name="group2" value="false">Dallas Cowboys</p>
+                <p><input type="radio" id="answer" name="group2" value="false">Indianapolis Colts</p>
+            
+                <h3>Who were the 2016 MLB World Series Champions?</h3>
+                <p><input type="radio" id="myRadio" name="group3" value="false">New York Yankees</p>
+                <p><input type="radio" id="myRadio" name="group3" value="false">Boston Red Sox</p>
+                <p><input type="radio" id="myRadio" name="group3" value="false">Cleveland Indians</p>
+                <p><input type="radio" id="myRadio" name="group3" value="true">Chicago Cubs</p>
+            
+                <h3>Who won the 2017 Women’s Wimbledon Championship?</h3>
+                <p><input type="radio" id="myRadio" name="group4" value="false">Serena Williams</p>
+                <p><input type="radio" id="myRadio" name="group4" value="false">Maria Sharapova</p>
+                <p><input type="radio" id="myRadio" name="group4" value="true">Garbine Muguruza</p>
+                <p><input type="radio" id="myRadio" name="group4" value="false">Venus Williams</p>
+            
+                <h3>Who won the 2016 Stanley Cup playoffs?</h3>
+                <p><input type="radio" id="myRadio" name="group5" value="false">Chicago Blackhawks</p>
+                <p><input type="radio" id="myRadio" name="group5" value="true">Pittsburgh Penguins</p>
+                <p><input type="radio" id="myRadio" name="group5" value="false">Los Angeles Kings</p>
+                <p><input type="radio" id="myRadio" name="group5" value="false">San Jose Sharks</p>
+                
+                <button class="submit" onclick="return handleClick();" type="submit">Submit Answers</button>
+        </div>
+    </div>
     
 </body>
+<script src = "assets/javascript/app.js"></script>
 </html>
