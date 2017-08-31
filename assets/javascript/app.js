@@ -15,13 +15,28 @@
 
     $(document).ready(function() {
         $(".questions").hide()
+        $("#final").hide()
 
         $('#start').on('click', function(){
             startGame();
         })
 
-
         function startGame() {
             $(".questions").fadeIn()
+            $(".start").hide()
+            startTimer();
+            decrement();
+        }
+
+        var seconds = 30;
+        var intervalId;
+        
+        function startTimer() {
+            intervalId = setInterval(decrement, 1000);
+        }
+
+        function decrement () {
+            seconds--;
+            $("#timer").html("<h2>" + seconds + " seconds remaining" + "</h2>");
         }
     });
